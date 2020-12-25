@@ -16,7 +16,7 @@ if (argv['file'].indexOf('.json') !== -1) {
 }
 
 addresses.forEach((address, index) => addresses[index] = address.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^A-Za-z0-9]/gi, '').toLowerCase());
-addresses = addresses.filter(address => !!address && address.length > 4).reduce((a,b) => {if(a.indexOf(b)<0)a.push(b);return a;},[]);
+addresses = addresses.filter(address => !!address && address.length > 2).reduce((a,b) => {if(a.indexOf(b)<0)a.push(b);return a;},[]);
 
 // Reset output file
 if (!argv['index']) {
