@@ -3,8 +3,8 @@ const Web3 = require('web3');
 const fs = require('fs');
 const argv = require('minimist')(process.argv.slice(2));
 
-const INFURA_APIKEY = ''; // Put your Infura API Key (https://infura.io)
-const provider = new Web3.providers.HttpProvider(`https://mainnet.infura.io/v3/${INFURA_APIKEY}`);
+const INFURA_APIKEY = 'af82e1a2184d4c32921669fca04c1a23'; // Put your Infura API Key (https://infura.io)
+const provider = new Web3.providers.HttpProvider(`https://mainnet.infura.io/v3/${af82e1a2184d4c32921669fca04c1a23}`);
 const ens = new ENS(provider);
 
 // Read txt file
